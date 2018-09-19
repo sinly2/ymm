@@ -28,9 +28,10 @@ def login():
 def verify_password():
     username = request.args.get('username')
     password = request.args.get('password')
-    user = User.query.filter(User.username == username).first()
-    login_user(user=user, remember=False)
-    if user.verify_password(password):
+    #user = User.query.filter(User.username == username).first()
+    user = User.query.get_user_by_username(username)
+    if user is not None and user.verify_password(password):
+        login_user(user=user, remember=False)
         return '222'
     else:
         return '333'

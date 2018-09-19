@@ -19,5 +19,15 @@ class SessionMixin(object):
 
 class YmmQuery(BaseQuery):
     def filter_in(self):
+        print dir(YmmQuery)
         pass
-db.Model.query_class = YmmQuery
+#db.Model.query_class = YmmQuery
+
+def get_first_data(func):
+    def wrapper(*args, **kwargs):
+        item = func(*args, **kwargs)
+        if item is None:
+            return item
+        else:
+            return item.first()
+    return wrapper

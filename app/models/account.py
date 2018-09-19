@@ -7,12 +7,21 @@ Created on Aug 21, 2018
 from flask_login import UserMixin
 from app import db, login_manager
 from _base import SessionMixin
+from flask_sqlalchemy import BaseQuery
+from _base import get_first_data
 
 __all__ = ['User']
 
 
+class UserQuery(BaseQuery):
+    @get_first_data
+    def get_user_by_username(self, username):
+        return self.filter(User.username == username)
+
+
 class User(db.Model, UserMixin, SessionMixin):
     __table__name__ = 'user'
+    query_class = UserQuery
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(200), unique=False)
     password = db.Column(db.String(200))
