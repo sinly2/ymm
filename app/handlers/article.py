@@ -20,4 +20,7 @@ def article(article_id=1):
 @bp.route('/')
 @bp.route('/page/<int:pageid>')
 def index(pageid=1):
-    pass
+    article_list = Article.query.get_article_list(page=1, page_size=10)
+    for article in article_list:
+        print article.title
+    return str(article_list)

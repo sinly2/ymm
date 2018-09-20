@@ -6,9 +6,8 @@ Created on Aug 21, 2018
 """
 from flask_login import UserMixin
 from app import db, login_manager
-from _base import SessionMixin
+from _base import SessionMixin, get_first_data
 from flask_sqlalchemy import BaseQuery
-from _base import get_first_data
 
 __all__ = ['User']
 
