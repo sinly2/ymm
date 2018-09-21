@@ -4,7 +4,7 @@ Created on Aug 23, 2018
 
 @author: guxiwen
 """
-from flask import Blueprint, request
+from flask import Blueprint, render_template
 from ..models.article import Article
 
 __all__ = ['bp']
@@ -18,9 +18,9 @@ def article(article_id=1):
 
 
 @bp.route('/')
-@bp.route('/page/<int:pageid>')
-def index(pageid=1):
-    article_list = Article.query.get_article_list(page=1, page_size=10)
+@bp.route('/page/<int:page_id>')
+def index(page_id=1):
+    article_list = Article.query.get_article_list(page=page_id, page_size=10)
     for article in article_list:
-        print article.title
-    return str(article_list)
+        print article.self_to_dict()
+    return render_template("newindex.html", articles=article_list)

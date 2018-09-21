@@ -6,15 +6,35 @@ Created on Aug 22, 2018
 """
 from app import db
 from flask_sqlalchemy import BaseQuery
+import datetime
 
 __all__ = ['SessionMixin', 'get_first_data', 'get_page']
 
 
 class SessionMixin(object):
+    def to_dict(self, *columns):
+        dic = {}
+        print self.__dict__
+        for col in columns:
+            value = getattr(self, col)
+            dic[col] = value
+        return dic
+
     def save(self):
         db.session.add(self)
         db.session.commit()
         return self
+
+    def self_to_dict(self):
+        dic = {}
+        for item in self.__dict__:
+            if item == "_sa_instance_state":
+                continue
+            value = getattr(self, item)
+            if isinstance(value, datetime.datetime):
+                value = value.strftime('%Y-%m-%d %H:%M:%S')
+            dic[item] = value
+        return dic
 
 
 class YmmQuery(BaseQuery):
