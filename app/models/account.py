@@ -6,16 +6,20 @@ Created on Aug 21, 2018
 """
 from flask_login import UserMixin
 from app import db, login_manager
-from _base import SessionMixin, get_first_data
+from _base import SessionMixin, YmmQuery, get_first_data
 from flask_sqlalchemy import BaseQuery
 
 __all__ = ['User']
 
 
-class UserQuery(BaseQuery):
+class UserQuery(YmmQuery):
     @get_first_data
     def get_user_by_username(self, username):
         return self.filter(User.username == username)
+
+    @get_first_data
+    def get_user_by_id(self, userid):
+        return self.filter(User.id == userid)
 
 
 class User(db.Model, UserMixin, SessionMixin):

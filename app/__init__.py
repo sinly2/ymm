@@ -24,8 +24,8 @@ def create_app():
     app.config['SECRET_KEY'] = 'hehe'
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://test:test@10.101.94.143:3301/test?charset=utf8'
-    #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:proxy,2015@127.0.0.1:40000/test?charset=utf8'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://test:test@10.101.94.143:3301/test?charset=utf8'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:proxy,2015@127.0.0.1:40000/test?charset=utf8'
+    #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://test:test@10.101.94.143:3301/test?charset=utf8'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     #app.register_blueprint(main__blueprint)
     #app.register_blueprint(auth__blueprint,url_prefix='/auth')

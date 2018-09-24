@@ -38,9 +38,21 @@ class SessionMixin(object):
 
 
 class YmmQuery(BaseQuery):
-    def filter_in(self):
-        print dir(YmmQuery)
-        pass
+    def filter_in(self, model, values):
+        values = set(values)
+        if len(values) == 0:
+            return {}
+        if len(values) == 1:
+            ident = values.pop()
+            rv = self.get(ident)
+            if not rv:
+                return {}
+            return {ident: rv}
+        items = self.filter(model.in_(values))
+        dct = {}
+        for item in items:
+            dct[getattr(item, model.key)] = item
+        return dct
 #db.Model.query_class = YmmQuery
 
 
