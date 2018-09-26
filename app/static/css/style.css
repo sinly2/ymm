@@ -30,7 +30,7 @@ body {
 	background: #fff;
 	border: 1px solid #c7c8ca;
 	box-shadow: 0 0 3px #ddd;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, sans-serif;
 	font-size: 16px;
 }
 	
@@ -186,7 +186,7 @@ header[role=banner] {
 	#site-title {
 		margin-bottom: 2px;
 		margin-right: 300px;
-		font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 		font-weight: 700;
 		font-size: 55px;
 		line-height: 1em;
@@ -202,7 +202,7 @@ header[role=banner] {
 		font-size: 14px;
 		margin-right: 300px;
 		color: #000;
-		font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 		font-weight: 400;
 		text-transform: uppercase;
 	}
@@ -242,15 +242,15 @@ header[role=banner] #searchform {
 .entry-header { margin-bottom: 25px }
 .entry-title { 
 	font-size: 1.5em;
-	font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+	font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: #000;
+	color: #333;
 }
 	
 	
 	.entry-title a {
-		color: #000;
+		color: #333;
 	}
 	
 	.sticky h1.entry-title {
@@ -310,7 +310,7 @@ nav[role=navigation] {}
 			nav[role=navigation] .menu #menu-icon { 
 				padding: 10px 20px;
 				color: #fff;
-				font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+				font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 				font-weight: 400;
 				font-size: 14px;
 				text-transform: uppercase;
@@ -462,9 +462,9 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.entry-meta {
 			margin: 0 0 .3em 0;
-			font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
-			font-size: 10px;
-			text-transform: uppercase;
+			font-family: 'Microsoft YaHei', "Times New Roman", Times, sans-serif;
+			font-size: 15px;
+			/*text-transform: uppercase;*/
 			color: #848484;
 		}
 		
@@ -483,7 +483,7 @@ POSTS & CONTENT STYLES
 			.meta time {}
 			
 			.entry-meta.single-date {
-				font-family: Georgia, "Times New Roman", Times, serif;
+				font-family: Georgia, "Times New Roman", Times, sans-serif;
 				font-size: 12px;
 			}
 			
@@ -504,7 +504,7 @@ POSTS & CONTENT STYLES
 				}
 				
 			.entry-meta.single-meta {
-				font-family: Georgia, "Times New Roman", Times, serif;
+				font-family: Georgia, "Times New Roman", Times, sans-serif;
 				font-size: 12px;
 				text-transform: lowercase;
 				color: #000;
@@ -526,7 +526,7 @@ POSTS & CONTENT STYLES
 		 
 		 	body.single .format-standard .post_content p:first-child:first-letter {
 				color: #e01222;
-				font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+				font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 				font-size: 80px;
 				font-weight: 700;
 				float: left;
@@ -597,7 +597,7 @@ POSTS & CONTENT STYLES
 		}
 		
 		.more-link {
-			font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+			font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 			text-transform: uppercase;
 		}
 		
@@ -685,7 +685,7 @@ PAGE NAVI STYLES
 (Special Feature)
 ******************************************************************/
 	.pagination {
-		font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 		text-transform: uppercase;
 		clear: both;
 		padding: 20px 0 30px 0;
@@ -779,7 +779,7 @@ PAGE LINK STYLES
 #nav-above a, 
 #nav-below a, 
 #image-navigation a {
-	font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+	font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -796,7 +796,7 @@ COMMENT STYLES
 ******************************************************************/
 #comments {}
 #comments-title {
-	font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+	font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 	font-size: 15px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -814,7 +814,7 @@ body.page-template-full-width-php .commentlist {}
 	}
 	
 		.commentlist footer.comment-head {
-		  	font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		  	font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 			font-size: 11px;
 			text-transform: uppercase;
 			margin-top: 3px;
@@ -828,7 +828,7 @@ body.page-template-full-width-php .commentlist {}
 		padding-bottom: 20px;
 		margin-left: 10px;
 		margin-right: 10px;
-		font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
@@ -940,7 +940,7 @@ body.page-template-full-width-php .commentlist {}
 				.commentlist li.comment .comment-content p {}
 				.commentlist li.comment ul {}
 				.commentlist .comment-reply-link {
-					font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+					font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 					font-size: 10px;
 					font-weight: 700;
 					text-transform: uppercase;
@@ -986,7 +986,7 @@ body.page-template-full-width-page-php #respond {
 	background: #fafafa;
 	border: 1px solid #dedede;
 	border-bottom: none;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 }
@@ -1065,7 +1065,7 @@ body.page-template-full-width-page-php #respond {
 			#respond #allowed_tags {}
 				#respond #comment {}
 				#respond #submit {
-					font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+					font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 					text-transform: uppercase;
 					color: #fff;
 					background: #e01222;
@@ -1130,7 +1130,7 @@ SIDEBARS & ASIDES
 			padding: 15px 20px 10px 20px;
 			background: #fafafa;
 			border-bottom: 1px solid #c7c8ca;
-			font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+			font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 			font-weight: 400;
 			font-size: 18px;
 			text-transform: uppercase;
@@ -1315,7 +1315,7 @@ footer[role=contentinfo] {
 	
 	#site-generator {
 		text-align: center;
-		font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+		font-family: 'Microsoft YaHei', Georgia, "Times New Roman", Times, sans-serif;
 		font-size: 10px;
 		font-weight: 700;
 		text-transform: uppercase;

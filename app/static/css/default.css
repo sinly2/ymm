@@ -539,8 +539,11 @@ POST STYLES
 
 #content {}
 #main {}
-	article[id*=post-] { 
-		padding: 2.2em 30px; 
+	article[id*=post-] {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 20px;
+		padding-right: 20px;
 		word-wrap: break-word; 
 	}
 	
